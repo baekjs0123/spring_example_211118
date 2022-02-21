@@ -11,6 +11,6 @@ public class TestController {
 	@ResponseBody
 	@RequestMapping("/test")
 	public String test1() {
-		return "Quiz Hello World!!!";
+		return "Hello World!!!";
 	}
 }
