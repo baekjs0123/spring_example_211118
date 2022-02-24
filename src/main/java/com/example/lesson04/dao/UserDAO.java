@@ -8,9 +8,11 @@ import com.example.lesson04.model.User;
 @Repository
 public interface UserDAO {
 
-	public User insertUser(
+	public void insertUser(
 			@Param("name") String name,
 			@Param("yyyymmdd") String yyyymmdd,
 			@Param("email") String email,
 			@Param("introduce") String introduce);
+	
+	public User selectLastUser();
 }

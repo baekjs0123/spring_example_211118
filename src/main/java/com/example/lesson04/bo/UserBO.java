@@ -13,6 +13,10 @@ public class UserBO {
 	private UserDAO userDAO;
 	
 	public void addUser(String name, String yyyymmdd, String email, String introduce) {
-		User user = userDAO.insertUser(name, yyyymmdd, email, introduce);
+		userDAO.insertUser(name, yyyymmdd, email, introduce);
+	}
+	
+	public User getLastUser() {
+		return userDAO.selectLastUser();
 	}
 }
